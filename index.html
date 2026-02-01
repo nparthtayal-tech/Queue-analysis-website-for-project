@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Queue Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header>
+  <h1>Smart Queue Monitoring Dashboard</h1>
+  <button>Connect Arduino</button>
+</header>
+
+<main>
+
+  <!-- LIVE COUNT -->
+  <div class="live-card">
+    <div id="liveCount">0</div>
+    <p>Live Queue Count</p>
+    <div id="queueHealth" class="health">QUEUE HEALTH</div>
+  </div>
+
+  <!-- STATS -->
+  <div class="stats-grid">
+    <div class="stat-card">
+      <h3>1 Hour Ago</h3>
+      <span id="hourAgo">--</span>
+    </div>
+    <div class="stat-card">
+      <h3>Yesterday</h3>
+      <span id="yesterday">--</span>
+    </div>
+    <div class="stat-card">
+      <h3>Rate (p/min)</h3>
+      <span id="rate">--</span>
+    </div>
+    <div class="stat-card">
+      <h3>Peak (1 hr)</h3>
+      <span id="peak">--</span>
+    </div>
+    <div class="stat-card">
+      <h3>Avg Wait</h3>
+      <span id="avgWait">--</span>
+    </div>
+    <div class="stat-card">
+      <h3>Est. Wait</h3>
+      <span id="estWait">--</span>
+    </div>
+  </div>
+
+  <!-- CHARTS -->
+  <div class="charts">
+    <div class="chart-card">
+      <h3>Live Queue Trend</h3>
+      <canvas id="queueChart"></canvas>
+    </div>
+
+    <div class="chart-card">
+      <h3>Comparison</h3>
+      <canvas id="compareChart"></canvas>
+    </div>
+
+    <div class="chart-card">
+      <h3>Average Wait Trend</h3>
+      <canvas id="avgWaitChart"></canvas>
+    </div>
+  </div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

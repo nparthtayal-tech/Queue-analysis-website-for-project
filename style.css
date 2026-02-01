@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* BACKGROUND */
+body {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+/* HEADER */
+header {
+  background: #1e40af;
+  color: white;
+  padding: 18px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 22px;
+}
+
+header button {
+  background: #22c55e;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* MAIN */
+main {
+  padding: 30px;
+}
+
+/* LIVE CARD */
+.live-card {
+  background: white;
+  border-radius: 24px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+#liveCount {
+  font-size: 90px;
+  font-weight: bold;
+  color: #1e40af;
+}
+
+.live-card p {
+  font-size: 18px;
+  color: #475569;
+}
+
+/* HEALTH */
+.health {
+  margin: 25px auto 0;
+  width: fit-content;
+  padding: 14px 36px;
+  border-radius: 30px;
+  background: #dc2626;
+  color: white;
+  font-weight: bold;
+}
+
+/* STATS GRID */
+.stats-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 20px;
+  padding: 22px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+}
+
+.stat-card h3 {
+  font-size: 15px;
+  color: #334155;
+  margin-bottom: 10px;
+}
+
+.stat-card span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* CHARTS */
+.charts {
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+.chart-card {
+  background: white;
+  border-radius: 22px;
+  padding: 20px;
+  box-shadow: 0 14px 35px rgba(0,0,0,0.08);
+}
+
+.chart-card h3 {
+  text-align: center;
+  margin-bottom: 12px;
+}
